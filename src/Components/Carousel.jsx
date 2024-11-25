@@ -19,8 +19,7 @@ const CustomCarousel = ({ slides }) => {
         640: { slidesPerView: 2, spaceBetween: 10 },  // at 640px width, show 2 slides
         768: { slidesPerView: 4, spaceBetween: 15 },  // at 768px width, show 3 slides
         1024: { slidesPerView: 7, spaceBetween: 20 }, // at 1024px width, show 5 slides
-      }}
-    >
+      }}>
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="flex items-center justify-center bg-[#F6F6F6]">
           <img src={slide.image} alt={slide.alt} className="w-[7vw] object-cover" />
